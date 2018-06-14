@@ -14,7 +14,7 @@ ul li {
   list-style: none;
 }
 
-.apple {
+.ringo {
   display:inline-block;
     width: 100px; 
     height: 100px;
@@ -22,13 +22,11 @@ ul li {
     background: url('apple.png') 0 0 no-repeat;
     background-size: cover;
     z-index:0;
-    /*background-size: 3000%;*/
-    /*animation: like-gif steps(28) 1s infinite both;*/
 }
 
-.apple input[type="checkbox"] {
+/*.ringo input[type="checkbox"] {
   display:none;
-}
+}*/
 
 #shield {
   display: block;
