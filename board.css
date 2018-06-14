@@ -1,0 +1,58 @@
+.stopper {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 6;
+	background:pink;
+	text-align: center;
+	font-size: 2em;
+	transform: translateY(-100vh);
+	animation: stopper 0.5s forwards;
+	animation-delay: 8s;
+}
+
+.container {
+  height:500px;
+}
+
+@keyframes stopper {
+	from {
+		transform: translateY(-100vh);
+	}
+
+	to {
+		transform: translateY(0vh);
+	}
+}
+
+.click-area:checked {
+	animation: none;
+	pointer-events: none;
+}
+
+.click-area:checked *.character {
+	animation: none;
+}
+
+.apple {
+    position :relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove infinite alternating forwards;
+    animation-duration: 4s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    0% {top: 300px;}
+    50% {top: 0px;}
+    100% {top:300px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0% {top: 300px;}
+    50% {top: 0px;}
+    100% {top:300px;}
+}
