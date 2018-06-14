@@ -1,0 +1,39 @@
+body {
+  text-align: center;
+  background-color: cornsilk;
+  cursor:crosshair;
+}
+
+h1, h2, h3 {
+  font-family: 'Permanent Marker', cursive;
+  color:rgb(89, 100, 112);
+  text-shadow: 1px 2px #da9c9c;
+}
+
+ul li {
+  list-style: none;
+}
+
+.apple {
+  display:inline-block;
+    width: 100px; 
+    height: 100px;
+    margin:auto;
+    background: url('apple.png') 0 0 no-repeat;
+    background-size: cover;
+    z-index:0;
+    /*background-size: 3000%;*/
+    /*animation: like-gif steps(28) 1s infinite both;*/
+}
+
+.apple input[type="checkbox"] {
+  display:none;
+}
+
+#shield {
+  display: block;
+  position:absolute;
+  height:100;
+  z-index:1;
+  background-color: cornsilk;
+}
