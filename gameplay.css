@@ -1,0 +1,32 @@
+.click-area {
+  position: absolute;
+  display: block;
+  //outline: 1px solid;
+  width: 40px;
+  height: 40px;
+  z-index: 3;
+  top: 10px;
+  left: -5px;
+  cursor: grab;
+  appearance: none;
+}
+//makes a 40x40 px box to display checkbox
+
+
+.click-area:checked {
+  background: green;
+}
+//when checkbox is clicked, turns green
+
+/*
+.game-area {
+  counter-reset: game;
+}
+
+.click-area:checked {
+  counter-increment: game;
+}
+
+.score::after {
+content: counter(game);
+}*/
