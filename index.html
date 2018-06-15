@@ -6,15 +6,16 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
   <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="gameplay.css">
   <link rel="stylesheet" href="board.css">
   <link rel="stylesheet" href="fruit.css">
+
+<script src="runfirst.js"></script>
 
 <!-- grass.css + background by by donzojoe @ 
 https://codepen.io/DonzoJoe/pen/zxmdrQ?page=2 -->
 <link rel="stylesheet" href="grass.css">
 
-  <script src="cssvalues.js"></script>
+  
 
 
   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
@@ -24,27 +25,32 @@ https://codepen.io/DonzoJoe/pen/zxmdrQ?page=2 -->
   </script>
 </head>
 <body>
-	<h1>Fruit Ranger</h1>
+  <div class="row py-3">
+    <div class="col-md-4">
+      <h2>Score: 
+      <div id="score">0</div></h2>
+      </div>
+    <div class="col-md-4">
+      <h1>Fruit Ranger</h1>
+    </div>
+    <div class="col-md-4">
+      <button id="resetter" onclick="myFunction()"><h2>Reset</h2></button>
+    </div>
+</div>
 
-  <div class="container">
+  <div class="container py-2">
 
 
- <!-- <div class="stopper"><h1>Time's Up!</h1></div>
+ <!-- <div class="stopper"><h1>Time's Up!</h1></div> -->
 
-<!-- <div id="grass"></div>-->
-
-<div class="apple" id="ring0"><input type="checkbox" class="click-area"></div>
-<div class="apple"><input type="checkbox" class="click-area"></div>
-<div class="apple"><input type="checkbox" class="click-area"></div>
+<div class="apple col-md-4"><button class="click-area" id="btn0"></button></div>
+<div class="apple col-md-4"><button class="click-area" id="btn1"></button></div>
+<div class="apple col-md-4"><button class="click-area" id="btn2"></button></div>
 
 </div>
 
-<h2>Score: 
-  <div class="score"></div>
-</h2>
-
   <!--done by donzojoe-->
-  
+  <div id="clouds" class="fixed-top">
   <div class="cloudcontain1">
     <div class="cloud1"></div>
     <div class="cloud2"></div>
@@ -67,7 +73,7 @@ https://codepen.io/DonzoJoe/pen/zxmdrQ?page=2 -->
     <div class="cloud1"></div>
     <div class="cloud2"></div>
     <div class="cloud3"></div>
-  </div>
+  </div></div>
   
   <!--Front Row-->
   <div class="blade1"></div>
@@ -167,8 +173,6 @@ https://codepen.io/DonzoJoe/pen/zxmdrQ?page=2 -->
 <!--
 <div id="shoots"></div>
 <div id="sunshine"></div>
-<div id="sky"></div>
-<div id="clouds"></div>
 <div id="squirrels-gophers"></div>
 -->
 
@@ -176,6 +180,6 @@ https://codepen.io/DonzoJoe/pen/zxmdrQ?page=2 -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-
+<script src="cssvalues.js"></script>
 </body>
 </html>
