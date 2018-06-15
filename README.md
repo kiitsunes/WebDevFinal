@@ -17,8 +17,7 @@ https://www.youtube.com/watch?v=HkK7OdY8Z1E
 
 https://www.youtube.com/watch?v=oWaGkW1YDmk
 
-fruits
-https://codepen.io/Bielecka/pen/EKOaME?editors=1100
+possible fruits: https://codepen.io/Bielecka/pen/EKOaME?editors=1100
 
 https://www.evancrouch.com/blog/creating-minimalist-css-landscape-art/
 
