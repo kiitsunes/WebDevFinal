@@ -1,7 +1,7 @@
 body {
   text-align: center;
   background-color: cornsilk;
-  cursor:crosshair;
+  /*cursor:crosshair;*/
 }
 
 h1, h2, h3 {
@@ -24,14 +24,14 @@ ul li {
     z-index:0;
 }
 
-/*.ringo input[type="checkbox"] {
-  display:none;
-}*/
+button {
+  background: url('apple.png') 0 0 no-repeat;
+  width: 150px;
+  padding: 50px 50px;
+}
 
-#shield {
-  display: block;
-  position:absolute;
-  height:100;
-  z-index:1;
-  background-color: cornsilk;
+#resetter {
+  background: url('https://thumbs.dreamstime.com/t/seamless-green-apple-pattern-tile-vegetarian-background-repeating-fruit-wrapping-paper-texture-vector-illustrated-84174045.jpg');
+  padding:5px;
+  border-radius:5px;
 }
