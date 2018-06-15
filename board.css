@@ -8,13 +8,15 @@
 	background:pink;
 	text-align: center;
 	font-size: 2em;
+  
 	transform: translateY(-100vh);
 	animation: stopper 0.5s forwards;
 	animation-delay: 8s;
+  animation-play-state: paused;
 }
 
 .container {
-  height:500px;
+  height:100vh;
 }
 
 @keyframes stopper {
@@ -27,17 +29,13 @@
 	}
 }
 
-.click-area:checked {
-	animation: none;
-	pointer-events: none;
-}
-
-.click-area:checked *.character {
-	animation: none;
+.click-area {
+    opacity:0;
+    cursor: grab;
 }
 
 .apple {
-    position :relative;
+    position: relative;
     -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
     animation: mymove infinite alternating forwards;
     animation-duration: 4s;
@@ -45,14 +43,14 @@
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes mymove {
-    0% {top: 300px;}
+    0% {top: 70vh;}
     50% {top: 0px;}
-    100% {top:300px;}
+    100% {top:70vh;}
 }
 
 /* Standard syntax */
 @keyframes mymove {
-    0% {top: 300px;}
+    0% {top: 70vh;}
     50% {top: 0px;}
-    100% {top:300px;}
+    100% {top:70vh;}
 }
