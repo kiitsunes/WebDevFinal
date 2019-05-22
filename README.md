@@ -1,7 +1,7 @@
-# WebDevFinal
+# Web Dev Final
 Front End Web Development final
 
-##Wishlist
+## Wishlist
 - fruit pops when clicked
 - fruit "jumps" and rotates slightly while falling
 - fruit disappears into holes or shoots
